@@ -2,7 +2,7 @@
 
 This is the source code to my personal portfolio website
 
-## How to Build the App Locally
+## Instructions
 
 1. Clone the repository to your local machine
 
