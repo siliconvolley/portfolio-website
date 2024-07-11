@@ -1,9 +1,11 @@
-<template>
-  <div class="text-center font-bold text-[3rem]">
-    Welcome to my portfolio website!
-  </div>
-</template>
-
 <script setup lang="ts">
-
+import Footer from "./components/Footer.vue";
+import Navbar from "./components/Navbar.vue";
+import MainSection from "./views/MainSection.vue";
 </script>
+
+<template>
+  <Navbar />
+  <MainSection />  
+  <Footer/>
+</template>
