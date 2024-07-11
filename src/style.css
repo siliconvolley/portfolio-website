@@ -2,4 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --clr-dark-100: #353941;
+    --clr-dark-300: #262626;
+    --clr-dark-500: #0f0f0f;
+    --clr-light-100: #fefefe;
+    --clr-light-300: #afafaf;
 
+    --clr-primary-100: #90B8F8;
+    --clr-primary-200: #5F85DB;
+}
+
+html {
+    font-family: 'Helvetica Neue', 'Inter', 'Trebuchet MS', sans-serif, monospace;
+    background: var(--clr-dark-500);
+    color: var(--clr-light-100);
+    font-weight: 200;
+    line-height: 1.2;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 100px);
+}
+
+ul {
+    text-decoration: none;
+}
