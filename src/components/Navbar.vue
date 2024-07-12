@@ -24,7 +24,7 @@ onMounted(() => {
       <li><a href="#experience" class="hover:underline">Experience</a></li>
       <li>
         <a
-          href="https://drive.google.com/file/d/1bw16LnKTNvEyb19dfCMuJG3F2hNkF3gr/view?usp=sharing"
+          href="https://drive.google.com/file/d/1lmjx7B_v8xFAHe2Rui8m6CFAYw5_wPU-/view?usp=sharing"
           class="hover:underline"
           rel="noopener noreferrer"
           target="_blank"
