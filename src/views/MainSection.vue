@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ProjectCard from "../components/ProjectCard.vue";
-import ExperienceCard from "../components/ExperienceCard.vue";
+import ProjectSection from "./ProjectSection.vue";
+import ExperienceSection from "./ExperienceSection.vue";
 </script>
 
 <template>
@@ -41,28 +41,8 @@ import ExperienceCard from "../components/ExperienceCard.vue";
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="px-[20rem] my-[16rem]">
-      <p class="text-[4rem] font-semibold underline">Projects</p>
-      <div class="my-[8rem] grid grid-cols-3 gap-[4rem] px-[2rem]">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="px-[20rem] my-[16rem]">
-      <p class="text-[4rem] font-semibold underline">Experience</p>
-      <div class="my-[8rem] grid gap-[2rem] px-[2rem]">
-        <ExperienceCard />
-        <ExperienceCard />
-      </div>
-    </section>
+    <ProjectSection />
+  
+    <ExperienceSection />
   </main>
 </template>
