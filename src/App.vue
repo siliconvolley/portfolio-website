@@ -7,5 +7,5 @@ import MainSection from "./views/MainSection.vue";
 <template>
   <Navbar />
   <MainSection />  
-  <Footer/>
+  <Footer />
 </template>
