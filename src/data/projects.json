@@ -1,0 +1,26 @@
+[
+  {
+    "title": "SPLIT.IT",
+    "description": "A simple web app for quick splitting of bills",
+    "tech_stack": ["React", "FastAPI"],
+    "card_image": "p01_SPLIT_IT.png",
+    "site_link": "https://split-it-web.vercel.app/",
+    "repo_link": "https://github.com/siliconvolley/split-it-web/"
+  },
+  {
+    "title": "C-ORDLE",
+    "description": "A fun terminal-based clone of the word guessing game, WORDLE",
+    "tech_stack": ["C", "Bash"],
+    "card_image": "p02_CORDLE.png",
+    "site_link": "https://github.com/siliconvolley/cordle/",
+    "repo_link": "https://github.com/siliconvolley/cordle/"
+  },
+  {
+    "title": "SmartGrid",
+    "description": "An open source company energy monitoring system",
+    "tech_stack": ["React", "NodeJS", "Flask", "PostgreSQL"],
+    "card_image": "p03_SmartGrid.png",
+    "site_link": "https://github.com/siliconvolley/smartgrid/",
+    "repo_link": "https://github.com/siliconvolley/smartgrid/"
+  }
+]
