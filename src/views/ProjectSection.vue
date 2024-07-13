@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import projects from "../data/projects.json";
 
-let baseImagePath: string = '../assets/project-images/'
+let baseImagePath: string = "../assets/project-images/";
 
 export interface RootInterface {
   projects: Project[];
@@ -11,11 +11,14 @@ export interface Project {
   title: string;
   description: string;
   tech_stack: string[];
-  card_image: string;
+  image_name: string;
   site_link: string;
   repo_link: string;
 }
 
+function fullImagePath(imageName: string) {
+  return new URL(`${baseImagePath}${imageName}`, import.meta.url).href;
+}
 </script>
 
 <template>
@@ -30,9 +33,8 @@ export interface Project {
             target="_blank"
             class="h-full grid place-items-center"
           >
-          <!-- ! Fix the image path not displaying the image -->
             <img
-              :src="baseImagePath.concat(project.card_image)"
+              :src="fullImagePath(project.image_name)"
               alt="Project Sample Image"
               class=""
             />
@@ -52,7 +54,12 @@ export interface Project {
             {{ project.description }}
           </p>
           <ul class="font-medium flex gap-2 text-center">
-            <li v-for="tech in project.tech_stack" class="bg-dark-100 min-w-[4rem] p-2 rounded-md">{{ tech }}</li>
+            <li
+              v-for="tech in project.tech_stack"
+              class="bg-dark-100 min-w-[4rem] p-2 rounded-md"
+            >
+              {{ tech }}
+            </li>
           </ul>
         </div>
       </div>
