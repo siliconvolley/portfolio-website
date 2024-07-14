@@ -25,7 +25,10 @@ function fullImagePath(imageName: string) {
   <section id="projects" class="px-[20rem] my-[16rem]">
     <p class="text-[4rem] font-semibold underline">Projects</p>
     <div class="my-[8rem] grid grid-cols-3 gap-[2rem]">
-      <div v-for="project in projects" class="p-4 rounded-lg card-shadow-animation">
+      <div
+        v-for="project in projects"
+        class="p-4 rounded-lg card-shadow-animation"
+      >
         <div class="project-card">
           <a
             :href="project.site_link"
@@ -36,6 +39,7 @@ function fullImagePath(imageName: string) {
             <img
               :src="fullImagePath(project.image_name)"
               alt="Project Sample Image"
+              draggable="false"
               class="hover:scale-110 duration-200"
             />
           </a>
@@ -78,7 +82,8 @@ function fullImagePath(imageName: string) {
 }
 
 .card-shadow-animation:hover {
-  box-shadow: 39px 41px 67px -15px rgba(0,0,0,0.75), -20px 5px 120px -108px rgba(240,240,240,1);
+  box-shadow: 39px 41px 67px -15px rgba(0, 0, 0, 0.75),
+    -20px 5px 120px -108px rgba(240, 240, 240, 1);
   transition: box-shadow ease-in-out 300ms;
 }
 </style>

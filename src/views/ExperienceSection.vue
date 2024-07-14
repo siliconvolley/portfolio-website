@@ -32,6 +32,7 @@ function fullImagePath(imageName: string) {
           <img
             :src="fullImagePath(experience.image_name)"
             :alt="experience.description"
+            draggable="false"
             class="opacity-20 blur-md w-[80%]"
           />
         </div>
