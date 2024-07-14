@@ -6,6 +6,7 @@ export default {
       colors: {
         "dark-100": "var(--clr-dark-100)",
         "dark-300": "var(--clr-dark-300)",
+        "dark-400": "var(--clr-dark-400)",
         "dark-500": "var(--clr-dark-500)",
         "light-100": "var(--clr-light-100)",
         "light-300": "var(--clr-light-300)",
@@ -14,7 +15,7 @@ export default {
       },
     },
     fontFamily: {
-      'sans': ['Helvetica', 'Inter']
+      sans: ["Helvetica", "Inter"],
     },
   },
   plugins: [],
