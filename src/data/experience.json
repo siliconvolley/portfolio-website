@@ -1,18 +1,23 @@
-{
-  "experiences": [
-    {
-      "id": "experience_id",
-      "title": "title",
-      "description": "description",
-      "date": "date",
-      "related_link": "related_link"
-    },
-    {
-      "id": "experience_id",
-      "title": "title",
-      "description": "description",
-      "date": "date",
-      "related_link": "related_link"
-    }
-  ]
-}
+[
+  {
+    "title": "AI/ML Lead",
+    "description": "Sahyadri Open Source Community (SOSC)",
+    "date": "June 2023 - Present",
+    "related_link": "https://www.sosc.org.in/",
+    "image_name": "e01_sosc.png"
+  },
+  {
+    "title": "Community Member",
+    "description": "Google Developer Student Club SCEM",
+    "date": "August 2023 - Present",
+    "related_link": "https://gdsc.community.dev/sahyadri-college-of-engineering-management-mangaluru-india/",
+    "image_name": "e02_gdsc.png"
+  },
+  {
+    "title": "IEEE Member",
+    "description": "IEEE Mangalore Subsection",
+    "date": "July 2024 - Present",
+    "related_link": "https://ieee-mangalore.org/",
+    "image_name": "e03_ieee.png"
+  }
+]
