@@ -22,5 +22,13 @@
     "image_name": "p03_SmartGrid.png",
     "site_link": "https://github.com/siliconvolley/smartgrid/",
     "repo_link": "https://github.com/siliconvolley/smartgrid/"
+  },
+  {
+    "title": "Connect-4",
+    "description": "An online clone to the popular board game, Connect-4",
+    "tech_stack": ["HTML", "CSS", "JS"],
+    "image_name": "p04_Connect_4.png",
+    "site_link": "https://github.com/siliconvolley/connect-4-js/",
+    "repo_link": "https://github.com/siliconvolley/connect-4-js/"
   }
 ]
