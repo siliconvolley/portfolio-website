@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import experiences from "../data/experience.json";
 
-let baseImagePath: string = "../assets/experience-images/";
+let baseImagePath: string = "/experience-images/";
 
 export interface RootInterface {
   experiences: Experience[];

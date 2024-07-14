@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import projects from "../data/projects.json";
 
-let baseImagePath: string = "../assets/project-images/";
+let baseImagePath: string = "/project-images/";
 
 export interface RootInterface {
   projects: Project[];
