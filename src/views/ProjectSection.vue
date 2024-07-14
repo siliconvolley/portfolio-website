@@ -24,8 +24,8 @@ function fullImagePath(imageName: string) {
 <template>
   <section id="projects" class="px-[20rem] my-[16rem]">
     <p class="text-[4rem] font-semibold underline">Projects</p>
-    <div class="my-[8rem] grid grid-cols-3 gap-[4rem] px-[2rem]">
-      <div v-for="project in projects">
+    <div class="my-[8rem] grid grid-cols-3 gap-[2rem]">
+      <div v-for="project in projects" class="p-4 rounded-lg card-shadow-animation">
         <div class="project-card">
           <a
             :href="project.site_link"
@@ -36,11 +36,11 @@ function fullImagePath(imageName: string) {
             <img
               :src="fullImagePath(project.image_name)"
               alt="Project Sample Image"
-              class=""
+              class="hover:scale-110 duration-200"
             />
           </a>
         </div>
-        <div>
+        <div class="">
           <p class="text-[1.75rem] font-semibold my-[0.25em]">
             <a
               :href="project.repo_link"
@@ -56,7 +56,7 @@ function fullImagePath(imageName: string) {
           <ul class="font-medium flex gap-2 text-center">
             <li
               v-for="tech in project.tech_stack"
-              class="bg-dark-100 min-w-[4rem] p-2 rounded-md"
+              class="bg-dark-300 min-w-[4rem] p-2 rounded-md cursor-default hover:bg-dark-100"
             >
               {{ tech }}
             </li>
@@ -67,7 +67,7 @@ function fullImagePath(imageName: string) {
   </section>
 </template>
 
-<style>
+<style scoped>
 .project-card {
   background: var(--clr-dark-300);
   height: 16rem;
@@ -75,5 +75,10 @@ function fullImagePath(imageName: string) {
   place-items: center;
   border-radius: 0.5rem;
   overflow: hidden;
+}
+
+.card-shadow-animation:hover {
+  box-shadow: 39px 41px 67px -15px rgba(0,0,0,0.75), -20px 5px 120px -108px rgba(240,240,240,1);
+  transition: box-shadow ease-in-out 300ms;
 }
 </style>
