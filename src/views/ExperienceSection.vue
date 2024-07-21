@@ -20,35 +20,34 @@ function fullImagePath(imageName: string) {
 </script>
 
 <template>
-  <section id="experience" class="px-[20rem] my-[16rem]">
-    <p class="text-[4rem] font-semibold underline">Experience</p>
-    <div class="my-[8rem] grid gap-[2rem] px-[2rem]">
+  <section id="experience" class="max-w-[48rem] my-8 md:max-w-full md:px-[20rem] md:my-[16rem]">
+    <p class="text-[2rem] font-bold underline md:text-[4rem]">Experience</p>
+    <div class="my-[2rem] grid gap-8 md:px-[2rem] md:my-[8rem]">
       <div
         v-for="experience in experiences"
-        :key="experience.image_name"
-        class="h-[20rem] bg-dark-400 rounded-lg flex items-center overflow-hidden card-shadow relative experience-image-animation"
+        class="max-w-[144rem] h-[16rem] bg-dark-400 rounded-lg flex items-center overflow-hidden card-shadow relative experience-image-animation md:h-[20rem]"
       >
-        <div class="w-[55%] absolute right-0 flex justify-end">
-          <img
-            :src="fullImagePath(experience.image_name)"
-            :alt="experience.description"
-            draggable="false"
-            class="opacity-20 blur-md w-[80%]"
-          />
-        </div>
-        <div class="px-[4rem] w-[75ch]">
-          <p class="text-[1.75rem] font-semibold">
+        <div class="w-[75%] absolute right-0 flex justify-center md:w-[55%] md:justify-end">
+      <img
+        :src="fullImagePath(experience.image_name)"
+        :alt="experience.description"
+        draggable="false"
+        class="opacity-20 blur-md w-full h-full object-cover md:w-[80%]"
+      />
+    </div>
+        <div class="px-[2rem] w-[75ch] z-[5] md:px-[4rem]">
+          <p class="text-[1.5rem] mb-2 font-semibold md:text-[1.75rem]">
             {{ experience.title }}
           </p>
           <a
             :href="experience.related_link"
             rel="noopener noreferrer"
             target="_blank"
-            class="text-[1.25rem] text-light-300 font-medium my-[0.5em] hover:underline"
+            class="text-light-300 font-medium hover:underline md:text-[1.25rem] md:my-[0.5em]"
           >
             {{ experience.description }}
           </a>
-          <p class="text-[1.25rem] text-light-300 font-light my-[0.5em]">
+          <p class="text-light-300 font-light my-[0.5em] md:text-[1.25rem]">
             {{ experience.date }}
           </p>
         </div>
@@ -59,7 +58,7 @@ function fullImagePath(imageName: string) {
 
 <style scoped>
 .card-shadow:hover {
-  box-shadow: 39px 41px 67px -15px rgba(0, 0, 0, 0.75),
+  box-shadow: 39px 41px 67px -15px rgba(0, 0, 0, 0.80),
     -20px 5px 120px -108px rgba(240, 240, 240, 1);
   transition: box-shadow ease-in-out 300ms;
 }

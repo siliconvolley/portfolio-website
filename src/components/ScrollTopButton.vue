@@ -6,7 +6,7 @@
     <img
       src="../assets/chevron-up.svg"
       alt="back to top"
-      class="min-w-[3vw] p-2 rounded-md hover:bg-dark-300 transition-all duration-200 ease-in-out"
+      class="min-w-[3vw] w-[4rem] p-2 bg-dark-400 rounded-md hover:bg-dark-300 transition-all duration-200 ease-in-out"
     />
   </div>
 </template>
